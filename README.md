@@ -1,3 +1,68 @@
+# 🛠️ Go Developer REST API Service
+
+A production-ready RESTful CRUD API service written in Go. This repository demonstrates modern software engineering practices, clean code architecture, and idiomatic Go development patterns.
+
+The project is designed to showcase enterprise-level backend development fundamentals, focusing on reliability, data validation, and clean database integration.
+
+## 🚀 Key Architectural Features
+
+* **Clean Architecture / Layered Pattern:** Clear separation of concerns between HTTP handlers, business logic (use cases/services), and data access layers (repositories).
+* **RESTful Standards:** Full implementation of CRUD operations with proper HTTP status codes, structured JSON payloads, and error handling.
+* **Database Integration:** Secure database connectivity featuring connection pooling and structured migrations.
+* **Input Validation:** Robust request payload verification to enforce data integrity before hitting the business layer.
+* **Environment Configuration:** Twelve-Factor App compliance using environment variables for safe configuration management.
+
+## 🛠️ Tech Stack
+
+* **Language:** Go (Golang)
+* **API / Routing:** Idiomatic HTTP routing
+* **Database:** PostgreSQL / MySQL (Structured relational storage)
+* **Dependency Management:** Go Modules (`go.mod`)
+
+## 🏁 Getting Started
+
+### Prerequisites
+
+* Go 1.18+
+* Database instance configured (PostgreSQL/MySQL)
+
+### Configuration
+
+Create a `.env` file in the root directory or set up your environment variables:
+
+```env
+DB_HOST=localhost
+DB_PORT=5432
+DB_USER=your_user
+DB_PASSWORD=your_password
+DB_NAME=your_db_name
+SERVER_PORT=8080
+```
+
+### Installation & Run
+
+1. Clone the repository:
+```bash
+git clone https://github.com
+cd go-developer-test-task
+```
+
+2. Download dependencies:
+```bash
+go mod download
+```
+
+3. Run the application:
+```bash
+go run main.go
+```
+
+## 📝 License
+
+This project is open-source and available under the [MIT License](LICENSE).
+
+---
+
 # 📦 Subscription Service
 
 REST API сервис для управления подписками пользователей и расчёта их суммарной стоимости за выбранный период.
